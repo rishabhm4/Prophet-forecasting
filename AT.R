@@ -15,7 +15,7 @@ library(zoo)
 #install.packages("Ckmeans.1d.dp",repos = "https://ftp.fau.de/cran/")
 library(Ckmeans.1d.dp)
 
-chan <- odbcConnect("exa_di1")
+chan <- odbcConnect("server_name")
 
 
 query <- c("select 
@@ -26,7 +26,7 @@ query <- c("select
            , NMV_BEF_CANCELLATION
            , NMV_BEF_RETURN
            , NMV
-           from CPS.ACTUALS
+           from Table
            
            where COUNTRY_SHIPPING ='AT' and ORDER_DATE >= '2015-01-01';")
 
@@ -52,12 +52,6 @@ colnames(data.final.rr)[2] <- "COUNTRY"
 
 
 #Holidays
-#Holidays new year ++++++ La befana day new year
-
-#Holidays new year ++++++ La befana day new year
-
-#Holidays new year ++++++ La befana day new year
-#Holidays new year ++++++ La befana day new year
 
 AllsaintsDay <- data.frame(holiday='All saints Day',
                            ds = as.Date(c(
@@ -125,8 +119,6 @@ CorpusChriti <-  data_frame(holiday = 'Corpus christi',
 easter <- data_frame(holiday = 'Easter',
                      ds = as.Date(c('2015-04-03', '2016-03-25', '2017-04-14', '2018-03-30', '2019-04-01')),
                      lower_window = -16, upper_window = 10)
-
-
 
 Epiphany <- data_frame(holiday = 'Epiphany',
                        ds = as.Date(c(
