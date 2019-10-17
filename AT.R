@@ -184,302 +184,8 @@ Whit_Monday <-  data_frame(holiday = 'Whit Monday',
                            )),lower_window=-7,upper_window=7)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#commercial events
-bf <- data_frame(holiday = 'Black Friday',
-                 ds = as.Date(c('2015-11-27',
-                                '2016-11-25', '2017-11-24', '2018-11-23', '2019-11-29')),
-                 lower_window = -21, upper_window = 16)
-
-
-
-
-
-#DD <- data_frame(holiday = 'daily deals',
-#                 ds = as.Date(c('2018-11-18','2019-11-24')),
-#                 lower_window = 0, upper_window = 4)
-
-eoss_countdown <- data_frame(holiday = 'Countdown',
-                             ds = as.Date(c(
-                               "2015-02-06",
-                               "2015-07-21",
-                               "2016-02-05",
-                               "2016-07-22",
-                               "2017-01-20",
-                               "2017-07-28",
-                               "2018-01-26",
-                               "2019-01-27",
-                               "2019-07-14"
-                               
-                             )),
-                             lower_window = -14, upper_window = 9)
-
-
-
-eoss <- data_frame(holiday = 'eoss',
-                   ds = as.Date(c( 
-                     '2015-01-01',
-                     '2015-02-05',
-                     '2015-06-14','2015-07-20'
-                   )),
-                   lower_window = -20, upper_window = 20)
-
-
-
-
-eoss_Premiumpresale <- data_frame(holiday = 'Premium pre sale',
-                                  ds = as.Date(c(
-                                    "2016-12-17","2019-06-09"                                    )),
-                                  lower_window = -7, upper_window = 7)
-
-
-
-
-Premium_sale <- data_frame(holiday = 'Premium Presale',
-                           
-                           ds = as.Date(c('2017-12-14',
-                                          '2018-06-10')),  
-                           lower_window = -10, upper_window = 14)
-
-
-
-
-
-
-
-EOSS_AW_1wave <- data_frame(holiday = 'first wave of AW EoSS',
-                            ds = as.Date(c(
-                              "2015-12-28",
-                              "2016-12-25",
-                              "2017-12-24",
-                              "2018-12-19",
-                              "2019-01-05",
-                              "2019-12-26")),
-                            lower_window = -10, upper_window = 10)
-
-
-EOSS_AW_2wave <- data_frame(holiday = 'second wave of AW EoSS',
-                            ds = as.Date(c(
-                              '2016-01-04',
-                              '2017-01-01',
-                              "2017-12-31",
-                              "2019-01-06"
-                              
-                            )),
-                            lower_window = -14, upper_window = 14)
-
-
-EOSS_AW_3wave <- data_frame(holiday = 'third wave of AW EoSS',
-                            ds = as.Date(c("2016-01-17",
-                                           "2016-01-31",
-                                           "2017-01-15",
-                                           "2018-01-14",
-                                           "2019-01-20"
-                            )),
-                            lower_window = -10, upper_window = 10)
-
-
-
-
-
-#EOSS_AW_4wave <- data_frame(holiday = 'fourth wave of AW EoSS',
-#                            ds = as.Date(c('2015-02-11','2016-02-08','2017-02-15', '2018-02-14','2019-02-12')),
-#                            lower_window = -14, upper_window = 14)
-
-
-EOSS_SS_1wave <- data_frame(holiday = 'first wave of SS EoSS',
-                            ds = as.Date(c(
-                              '2016-06-10',
-                              '2017-06-18',
-                              '2018-06-17',
-                              '2019-06-16'
-                            )),
-                            lower_window = -14, upper_window = 14)
-
-
-EOSS_SS_2wave <- data_frame(holiday = 'second wave of SS EoSS',
-                            ds = as.Date(c(
-                              "2016-06-19",
-                              "2016-07-09",
-                              
-                              "2017-06-25",
-                              "2018-06-24",
-                              "2019-06-23")),
-                            lower_window = -16, upper_window = 16)
-
-
-
-
-EOSS_SS_3wave <- data_frame(holiday = 'third wave of SS EoSS',
-                            ds = as.Date(c(
-                              
-                              '2016-07-10',
-                              '2017-07-02',
-                              "2017-07-27",
-                              
-                              '2018-07-01',
-                              "2018-07-26",
-                              
-                              '2019-06-30'
-                              ,"2019-07-13"             
-                            )),
-                            lower_window = -10, upper_window = 10)
-
-#EOSS_SS_4wave <- data_frame(holiday = 'fourth wave of SS EoSS',
-#                           ds = as.Date(c('2018-08-13',
-#                                           '2018-08-22',
-#                                          '2019-08-12',
-#                                         '2019-08-18'
-#                                         )),
-#                         lower_window = -7, upper_window = 7)
-
-MSS_countdown <- data_frame(holiday = 'MSS countdown',
-                            ds = as.Date(c(
-                              "2017-10-20",
-                              "2018-10-19",
-                              "2019-04-07",
-                              "2019-10-27"
-                            )),
-                            lower_window = -7, upper_window = 7)
-
-
-MSS <- data_frame(holiday = 'MSS',
-                  ds = as.Date(c(
-                    "2015-04-12",
-                    "2015-10-11",
-                    "2016-04-09",
-                    "2017-10-08",
-                    "2018-10-07"
-                  )),
-                  lower_window = -16, upper_window = 16)
-
-
-
-
-#MSS_flashsale <-  data_frame(holiday = 'MSS flash sale',
-#                            ds = as.Date(c('2015-05-13',
-#                                            '2015-05-20')),
-#                            lower_window = -4, upper_window = 4)
-
-MSSPresale <- data_frame(holiday = 'MSS presale',
-                         ds = as.Date(c(
-                           "2018-04-01"
-                         )),
-                         lower_window = -7, upper_window = 7)  
-
-
-#
-
-
-
-MSS_Wave1 <- data_frame(holiday = 'MSS wave 1',
-                        ds = as.Date(c(
-                          
-                          "2016-10-09",
-                          "2017-04-21",
-                          "2018-04-08",
-                          "2019-03-24",
-                          "2019-10-13"
-                        )),
-                        lower_window = -10, upper_window = 10)
-MSS_Wave2 <- data_frame(holiday = 'MSS wave 2',
-                        ds = as.Date(c(
-                          
-                          '2016-10-16',
-                          '2017-04-28',
-                          '2018-04-15',
-                          '2019-03-31','2019-10-20'
-                        )),
-                        lower_window = -10, upper_window = 10)
-#eoss_countdown_4d <- data_frame(holiday = '4 day Countdown',
-#                                ds = as.Date(c('2018-07-20')),
-#                                lower_window = -14, upper_window = 10)
-
-
-
-
-
-
-wh_sale <- data_frame(holiday = 'warehouse sale',
-                      ds = as.Date(c(
-                        
-                        "2015-02-22",
-                        
-                        "2015-08-07",
-                        
-                        "2016-02-19",
-                        "2016-08-06"
-                        
-                      )),
-                      lower_window = -14, upper_window = 14)
-
-
-flashsales <- data_frame(holiday = 'flash sales',
-                         ds = as.Date(c(
-                           "2018-03-09",
-                           "2018-05-15",
-                           "2018-07-27",
-                           "2018-10-30",
-                           "2018-12-13",
-                           "2019-01-27",
-                           "2019-05-04",
-                           "2019-05-22",
-                           "2019-07-14"                    )),
-                         lower_window = -16, upper_window = 16)
-
-#wh_sale_3d <- data_frame(holiday = '3 day warehouse sale',
-#                         ds = as.Date(c('2017-02-16')),
-#                         lower_window = -14, upper_window = 9)
-
-
-voucher_1d <- data_frame(holiday = 'voucher 1d',
-                         ds = as.Date(c(
-                           "2019-03-24",
-                           "2019-06-16"
-                           
-                           
-                           
-                           
-                         )),
-                         lower_window = -14, upper_window = 14)
-
-
-
-voucher_2d <- data_frame(holiday = 'voucher 2d',
-                         ds = as.Date(c( 
-                           '2018-09-17'
-                           
-                           
-                         )),
-                         lower_window = -7, upper_window = 7)
-
-
-
-
-
-
-
-
-holidays <- bind_rows(AllsaintsDay,AscensionDay,AssumptionDay,xmas,CorpusChriti,easter,Epiphany,Immaculate_Conception_Day,Labour_Day,National_Day,newyear,Whit_Monday,bf,eoss_countdown,eoss,eoss_Premiumpresale,Premium_sale,EOSS_AW_1wave,EOSS_AW_2wave,EOSS_AW_3wave,EOSS_SS_1wave,EOSS_SS_2wave,EOSS_SS_3wave,MSS_countdown,MSS,MSSPresale,MSS_Wave1,MSS_Wave2,wh_sale,flashsales,voucher_1d,voucher_2d)
-
-
-
-
-
-
+#Holiday data frame
+holidays <- bind_rows(AllsaintsDay,AscensionDay,AssumptionDay,xmas,CorpusChriti,easter,Epiphany,Immaculate_Conception_Day,Labour_Day,National_Day,newyear,Whit_Monday)
 
 columns_wanted_prophet <- c("ORDER_DATE", "RR")
 df <- data.final.rr[, names(data.final.rr) %in% columns_wanted_prophet]
@@ -487,6 +193,8 @@ colnames(df)[1] <- "ds"
 colnames(df)[2] <- "y"
 df$ds <- as.Date(as.character(df$ds), format="%Y-%m-%d")
 today <- Sys.Date()
+
+#For varying current date taking past values
 df <- subset(df, df$ds < today - 45)
 
 #adding regressor
@@ -520,7 +228,7 @@ df <- df[df$ds >= '2015-12-31',]
 m <- fit.prophet(m, df)
 
 
-#predicting with prophet
+#predicting with prophet -75 days in future
 FC_period <- as.Date(Sys.Date() + 75,  format="%Y-%m-%d")
 forecast_days <- difftime(FC_period,today-45,  units = c("days"))
 future <- make_future_dataframe(m, periods = forecast_days)
@@ -548,6 +256,9 @@ prophet_plot_components(m, forecast)
 #colnames(forecast_values_prophet_rr)[2] <- "RETURN RATE II"
 #forecast_values_prophet_rr$ds <- as.Date(forecast_values_prophet_rr$ds)
 
+###############################################################################################
+#Backtesting
+
 #Plus 4 (M+2)
 df.cv <- cross_validation(m, horizon =129 , initial = 990,period = 30 ,units = 'days')
 m_v <- split(df.cv,as.Date(df.cv$cutoff))
@@ -565,10 +276,6 @@ colnames(plus4) <-c("Date","Predicted Value","Forecast Date")
 #Checking Sequence
 plus4$missingflag <- c(1, diff(as.POSIXct(plus4$Date, format="%Y-%M-%D"))) > 1
 if(length(plus4[plus4$missingflag ==TRUE,]$Date) >0 ) { stop("Dates not in sequence ")}
-
-
-
-
 
 
 
