@@ -10,4 +10,6 @@ I have also added the part of back testing for predicting 1st,2nd & 3rd month fo
 For eg: 
 1) Actual till - Jan      Forecast - Feb (1st), March (2nd) , April (3rd)
 2) Actual till - Feb      Forecast - March (1st), April (2nd), May (3rd)
-3) and soon
+3) Actual till - March    Forecast - April (1st), May (2nd), June (3rd)
+4) So on ...
+Then considered every 1st, 2nd, 3rd forecast to compare with the actual 
